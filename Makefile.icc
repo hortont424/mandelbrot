@@ -1,0 +1,3 @@
+all:
+	icc mandelbrot.c -I/scratch/mandelbrot/include -L/scratch/mandelbrot/lib -m64 -o mandelbrot -msse3 -mmmx -fast -O3 -ip -unroll -lpthread -std=c99 /scratch/mandelbrot/lib/libgmp.a /scratch/mandelbrot/lib/libgd.a /usr/lib/libpng.a /usr/lib/libz.a
+
